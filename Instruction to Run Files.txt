@@ -1,0 +1,27 @@
+requirements:
+ 1)pip install pyyaml
+ 2)pip install sentence-transformers
+ 3)pip install numpy
+ 4)pip install pandas
+ 5)pip install sklearn
+
+
+train.py :
+ 
+ 1) Keep the train_data.csv and valid_data.csv in same directory as the train.py file
+
+ 2) The file can be run by command: python train.py --config path_to_configuration_file
+                           Example: python train.py --config /content/Configuration.yml
+
+ 3) Running this will create three folder named "Action,Location and Object" in same directory which have respective models to find the three for each sentence
+
+evaluvate.py
+
+ 1) Keep evaluvate.py in same directory as test file
+
+ 2) It can be run using command: python evaluvation.py filename/path_to_file
+
+ 3) Running this file will output F1 Score for each label of the three classification i.e. action,location,label
+
+
+ 
