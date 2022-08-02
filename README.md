@@ -3,7 +3,7 @@ Detailed Solution on colab : https://colab.research.google.com/drive/1eIjhITURmg
 
 File Description:
 
-1)Log files folder  (Log files for models, 3 models are trained hence there are total 6 plots, i.e. train and validation plot for each model)
+1)Log files folder  (Log files for models, 3 models are trained hence there are total 6 curves on two plots, i.e. train and validation plot for each model)
 
 2)Configuration.yml (configuration file)
 
