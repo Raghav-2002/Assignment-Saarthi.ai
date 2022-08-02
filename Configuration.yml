@@ -1,0 +1,15 @@
+#Train and Validation directory
+train_data_directory : train_data.csv
+validation_data_directory : valid_data.csv
+
+#Model Parameters
+loss : categorical_crossentropy
+optimizer : adam
+metric : accuracy
+epochs : 50
+batch_size : 64
+
+#Model Paths
+action_model_path : Action
+location_model_path : Location
+object_model_path : Object
