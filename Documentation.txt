@@ -1,0 +1,25 @@
+Files Shared:
+1)Log files folder  (Log files for models, 3 models are trained hence there are total 6 plots, i.e. train and validation plot for each model)
+2)Configuration.yml (configuration file)
+3)evaluvation.py    (to evaluvate models)
+4)train.py          (to train models)
+5)Instruction to run code file
+6)train_data.csv
+7)valid_data.csv
+
+Aim : 
+Given text we need to extract action that needs to be taken, action to be taken on which object and location where that object is present.
+ 
+Solution:
+1) Given a the train set, we encode all the sentences into 768-dimensional vector (dimension chosen by pre-trained SentenceBERT model) using SentenceBERT model
+2) We observe that possible values for action, object and location for the sentences given in the dataset are small.
+3) So these are encoded using a one hot encoder
+4) 3 neural networks are trained to predict action, object and location (one model for each) given the encode sentence vector as input.So the problem statement is coverted to a 3 classification sub-problem.
+5) Log files are maintained using Tensorboard
+6) The weights are saved and loaded when requried for extraction from new unseen sentences.
+ 
+Result:
+1) The SentenceBERT model along with the neural network is able to correctly identify action, location and object in the given sentences.
+2) We are able to achive F1 score of 1 or close to 1 for all classification
+
+NOTE : A detailed solution can be found at colab : https://colab.research.google.com/drive/1eIjhITURmgKshzVL6IKMPZNMbOd3g0a0?usp=sharing
